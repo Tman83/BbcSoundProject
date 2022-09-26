@@ -1,3 +1,4 @@
+@todo
 Feature: Sounds Homepage
 
 As a user
@@ -7,16 +8,16 @@ So THAT I can see and access all logos and content in one place
 Background:
 Given that I am on the BBC Sounds Homepage
 
-  @todo
+
 Scenario: Radio 1 and Radio 2 logos are displayed in the Listen Live module on the Sounds Homepage
 When I select the ‘Home’ logo
 Then I am on the Sounds Homepage
 And I can see the Radio 1 logo
 And I can see the Radio 2 logo
 
-
+@test
 Scenario: Verify network station logos are displayed on the Stations page
-When I click the ‘View all Stations & Schedules’ link
+When I click the "View all Stations & Schedules" link
 Then I am on the ‘Stations’ page
 And I see 26 network station logos
 

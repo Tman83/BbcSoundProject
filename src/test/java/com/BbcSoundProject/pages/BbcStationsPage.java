@@ -1,5 +1,6 @@
 package com.BbcSoundProject.pages;
 
+import java.util.List;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -10,6 +11,9 @@ public class BbcStationsPage extends BasePage {
 
     @FindBy(xpath = "//span[text()='Radio 1']")
     public WebElement BbcRadio1Station;
+
+    @FindBy(xpath = "//*[local-name()='svg' and contains(@class, 'sc-o-responsive-image__svg')] ")
+    public List<WebElement> BbcNetworkStationsLogos;
 
     @FindBy(xpath = "//span[text()='Radio 1 Dance']")
     public WebElement BbcRadio1Dance;

@@ -1,6 +1,7 @@
 package com.BbcSoundProject.pages;
 
 import com.BbcSoundProject.utilities.Driver;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -31,4 +32,7 @@ public class BbcBasePage {
 
 
 
+    public void selectPage(String attribute){
+        Driver.getDriver().findElement(By.xpath("(//span[text()='" + attribute + "'])[1]")).click();
+    }
 }
